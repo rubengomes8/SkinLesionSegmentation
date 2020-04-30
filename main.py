@@ -23,11 +23,11 @@ def dice_coef_loss(y_true, y_pred):
     return 1.0 - dice_coef(y_true, y_pred)
 
 
-dataset_path = "/home/ruben/Documents/dataset/"
+dataset_path = "/home/ruben/Documentos/dataset/"
 
 train_path = os.path.join(dataset_path, "train/")
 
-train_csv = pd.read_csv(dataset_path + "train.csv")
+train_csv = pd.read_csv(train_path + "train.csv")
 train_ids = train_csv["id"].values # coluna do nome da imagem
 
 image_size = 224
